@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/share_user_profile"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"/>
+
+    <TextView
+        android:id="@+id/share_user_username"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        android:text="pratiik_26"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/send_post_btn"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/unfollow_btn"
+        android:text="Send"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

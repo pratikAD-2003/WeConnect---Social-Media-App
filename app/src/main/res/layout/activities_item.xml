@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_2sdp"
+    android:background="@color/black">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/activityList_user_profile"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/baseline_message_24"
+        android:layout_alignParentStart="true"
+        android:layout_height="@dimen/_35sdp"/>
+
+    <TextView
+        android:id="@+id/activities_text"
+        android:layout_toEndOf="@+id/activityList_user_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:text="pratiik_26"/>
+
+    <TextView
+        android:id="@+id/activities_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01-15-2022"
+        android:padding="@dimen/_2sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp"/>
+</RelativeLayout>

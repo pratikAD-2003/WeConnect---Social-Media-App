@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IChat"
+        tools:targetApi="31">
+        <activity
+            android:name=".tabItems.showChatListUsers"
+            android:exported="false" />
+        <activity
+            android:name=".SendItemsProcess.Sender_reel_items"
+            android:exported="false" />
+        <activity
+            android:name=".Story_Management.reel_story_details"
+            android:exported="false" />
+        <activity
+            android:name=".Story_Management.video_story_details"
+            android:exported="false" />
+        <activity
+            android:name=".Story_Management.image_story_details"
+            android:exported="false"
+            android:label="@string/title_activity_image_story_details"
+            android:theme="@style/Theme.IChat" />
+        <activity
+            android:name=".Post_Maintainence.followedList"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Maintainence.followingList"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Maintainence.TapOnVideo"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Maintainence.saved_posts"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Maintainence.comment_management"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Maintainence.TapOnImage"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Details.reel_post_details"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Details.video_post_details"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Details.img_post_details"
+            android:exported="false"
+            android:label="@string/title_activity_img_post_details"
+            android:theme="@style/Theme.IChat" />
+        <activity
+            android:name=".user_connection.other_user_followers"
+            android:exported="false" />
+        <activity
+            android:name=".user_connection.connectedUsers"
+            android:exported="false" />
+        <activity
+            android:name=".OtherUserProfileFollow"
+            android:exported="false" />
+        <activity
+            android:name=".AudioPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".videoPlaySend"
+            android:exported="false" />
+        <activity
+            android:name=".perUserProfileDetailsFetch"
+            android:exported="false" />
+        <activity
+            android:name=".fullImageOnMain"
+            android:exported="false" />
+        <activity
+            android:name=".chat_screen"
+            android:exported="false" />
+        <activity
+            android:name=".userDetails"
+            android:exported="false" />
+        <activity
+            android:name=".UsersActivities.search_users_onApp"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".enter_otp"
+            android:exported="false" />
+
+        <service
+            android:name=".PushNotification.PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

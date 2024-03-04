@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:id="@+id/videoL1"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/img_background"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/sender_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_4sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/send_video_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_play_circle_24"
+            android:layout_alignStart="@+id/sender_video"
+            android:layout_alignEnd="@+id/sender_video"
+            android:layout_alignTop="@+id/sender_video"
+            android:padding="@dimen/_50sdp"
+            android:layout_alignBottom="@+id/sender_video"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/send_video_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/videoL1"
+        android:layout_alignTop="@+id/videoL1"
+        android:layout_toStartOf="@+id/videoL1"
+        android:textSize="@dimen/_8sdp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/videoL2"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/receiver_image"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/receiver_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/_4sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/receive_video_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_play_circle_24"
+            android:layout_alignStart="@+id/receiver_video"
+            android:layout_alignEnd="@+id/receiver_video"
+            android:layout_alignTop="@+id/receiver_video"
+            android:padding="@dimen/_50sdp"
+            android:layout_alignBottom="@+id/receiver_video"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/receiver_video_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/videoL1"
+        android:layout_alignTop="@+id/videoL2"
+        android:layout_toEndOf="@+id/videoL2"
+        android:textSize="@dimen/_8sdp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

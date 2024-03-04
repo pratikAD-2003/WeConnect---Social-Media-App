@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeConnect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_img_post_details">img_post_details</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="title_activity_image_story_details">image_story_details</string>
+</resources>

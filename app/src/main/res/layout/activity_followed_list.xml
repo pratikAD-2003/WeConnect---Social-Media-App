@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Post_Maintainence.followedList">
+
+    <LinearLayout
+        android:id="@+id/JLK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:background="@color/grey"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:text="Connected Users"
+            android:textSize="@dimen/_20sdp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/WeConnects_text"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/JLK"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/searchFollowedUsers"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/followed_btn"
+            android:hint="Search Here..."
+            android:layout_height="@dimen/_30sdp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/following_followed_recyclerview2"
+        android:padding="@dimen/_2sdp"
+        android:layout_below="@+id/WeConnects_text"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

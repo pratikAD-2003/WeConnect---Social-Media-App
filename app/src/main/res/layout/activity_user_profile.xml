@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/apll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/createProfileDetails"
+            app:titleTextColor="@color/white"
+            app:title="User Profile Details"
+            app:subtitleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            app:civ_border_width="4dp"
+            android:layout_centerInParent="true"
+            android:tint="#0AB6A6"
+            android:src="@drawable/image"
+            app:civ_border_color="@color/grey"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Add User Profile"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/followed_btn"
+            android:maxLength="15"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/_5sdp"
+            android:elevation="@dimen/_11sdp"
+            android:hint="Create Username..." />
+
+        <EditText
+            android:id="@+id/onDisplayName"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/followed_btn"
+            android:maxLength="25"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/_5sdp"
+            android:elevation="@dimen/_11sdp"
+            android:hint="Name (On Display)" />
+
+
+        <EditText
+            android:id="@+id/about"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/followed_btn"
+            android:textColorHint="@color/white"
+            android:maxLength="100"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/_5sdp"
+            android:elevation="@dimen/_11sdp"
+            android:hint="Description..." />
+
+        <EditText
+            android:id="@+id/given_Number"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/followed_btn"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/_5sdp"
+            android:elevation="@dimen/_11sdp"
+            android:hint="Number"/>
+
+        <Button
+            android:id="@+id/createProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/followed_btn"
+            android:elevation="@dimen/_8sdp"
+            android:text="Create"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
