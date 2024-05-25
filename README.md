@@ -1,5 +1,1 @@
-![WC1](https://github.com/pratikAD-2003/WeConnect---Social-Media-App/assets/162031829/2821dae2-b3bb-438a-86e2-41eab1daa4c7)
-![WC2](https://github.com/pratikAD-2003/WeConnect---Social-Media-App/assets/162031829/1788eb53-97e1-4f2f-b6c7-d5ad64c14666)
-![WC3](https://github.com/pratikAD-2003/WeConnect---Social-Media-App/assets/162031829/e7e8408e-4f1f-46d5-9c1a-397f159b8acc)
-![WC4](https://github.com/pratikAD-2003/WeConnect---Social-Media-App/assets/162031829/d1bc3bc4-58b3-480a-b41f-fee496bfd3df)
-![WC5](https://github.com/pratikAD-2003/WeConnect---Social-Media-App/assets/162031829/69902996-46ac-4111-98f9-e49757fd552e)
+![weConnects](https://github.com/pratikAD-2003/WeConnect---Social-Media-App/assets/162031829/cd195a3b-d2d4-4804-9dcd-52148252d2d8)
